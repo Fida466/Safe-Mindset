@@ -7,28 +7,47 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;   /* Yeh header ka height control karega */
+  padding: 10px 30px;    /* Reduced padding for smaller header */
   background: #f8f8f8;
   border-bottom: 1px solid #ddd;
-  height: 100px;        /* Fix header height set kar di */
+  height: 70px;          /* Reduced header height */
 }
 
 /* Logo image size */
 header img {
-  width: 80px;   /* Sirf logo ka size control hoga */
+  width: 120px;          /* Increased logo size */
   height: auto;
+  margin-right: 30px;    /* Spacing between logo and nav */
+}
+
+/* Responsive header for mobile */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 10px;
+  }
+  header img {
+    margin-bottom: 10px;
+    margin-right: 0;
+    width: 100px;
+  }
+  header nav {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* Service section ke icons */
 .icon {
-  width: 80px;    /* yahan se icons ka size control hota hai */
+  width: 80px;
   height: auto;
   margin-bottom: 10px;
 }
 
 /* Footer icons (Phone, Mail, etc.) */
 footer img {
-  width: 20px;   /* yahan se footer icons ka size control hota hai */
+  width: 20px;
   height: auto;
   vertical-align: middle;
   margin-right: 5px;
@@ -47,16 +66,7 @@ body {
   background: #fff;
 }
 
-/* Header styling */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background: #f8f8f8;
-  border-bottom: 1px solid #ddd;
-}
-
+/* Header nav links */
 header nav a {
   margin: 0 15px;
   text-decoration: none;
@@ -68,6 +78,14 @@ header nav a:hover {
   color: #0077cc;
 }
 
+/* Sticky navigation suggestion */
+@media (min-width: 601px) {
+  header nav {
+    position: relative;
+    top: 0;
+  }
+}
+
 /* Hero Section */
 .hero {
   text-align: center;
@@ -76,12 +94,12 @@ header nav a:hover {
 }
 
 .hero h1 {
-  font-size: 2.5rem; /* hero heading size */
+  font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 1.1rem; /* hero paragraph size */
+  font-size: 1.1rem;
   margin-bottom: 20px;
 }
 
@@ -190,18 +208,22 @@ header nav a:hover {
 
 /* Footer */
 footer {
-  background: #f8f8f8;
+  background: #1E3A8A;       /* Changed footer color */
   padding: 20px;
   text-align: center;
   border-top: 1px solid #ddd;
+  color: #fff;               /* White text in footer */
 }
 
 footer a {
-  color: #0077cc;
+  color: #ffd700;            /* Gold color for footer links */
   text-decoration: none;
   margin: 0 8px;
+  font-weight: 500;
+  transition: color 0.2s;
 }
 
 footer a:hover {
   text-decoration: underline;
+  color: #fff;
 }
