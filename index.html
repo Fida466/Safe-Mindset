@@ -3,172 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Safe Mindset – 90-Day Quran-Powered Recovery</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Icons (Font Awesome for social + extra emojis if needed) -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Safe Mindset - 90 Days Recovery</title>
+  <style>
+    body { margin:0; font-family: 'Poppins', Arial, sans-serif; line-height:1.6; color:#111; background:#f9fafb; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:20px; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.05); position:sticky; top:0; z-index:1000; }
+    header img { height:48px; }
+    nav a { margin-left:20px; text-decoration:none; color:#1E3A8A; font-weight:500; }
+    .hero { text-align:center; padding:80px 20px; background:#fff; }
+    .hero h1 { font-size:2.5rem; color:#1E3A8A; margin-bottom:10px; font-weight:600; }
+    .hero p { font-size:1.1rem; color:#444; max-width:600px; margin:10px auto; }
+    .hero .btn { display:inline-block; margin:15px 8px; padding:14px 28px; border-radius:8px; font-weight:600; text-decoration:none; }
+    .btn-primary { background:#059669; color:#fff; }
+    .btn-primary:hover { background:#047857; }
+    .btn-secondary { border:2px solid #059669; color:#059669; background:transparent; }
+    .btn-secondary:hover { background:#059669; color:#fff; }
+    .trust-badges { display:flex; justify-content:center; gap:20px; margin-top:30px; flex-wrap:wrap; }
+    .trust-badges div { background:#f1f5f9; padding:10px 16px; border-radius:6px; font-size:0.9rem; color:#1E3A8A; }
+    .section { padding:80px 20px; max-width:1100px; margin:auto; }
+    .section h2 { text-align:center; font-size:2rem; color:#1E3A8A; margin-bottom:40px; font-weight:600; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px; }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:24px; text-align:center; transition:transform 0.2s ease; }
+    .card:hover { transform:translateY(-4px); border-color:#059669; }
+    .card h3 { color:#059669; margin-bottom:10px; font-size:1.2rem; font-weight:600; }
+    .card p { font-size:0.95rem; color:#444; }
+    .about, .mission { text-align:center; max-width:800px; margin:auto; }
+    .about p, .mission p { color:#444; }
+    .testimonials { background:#f1f5f9; }
+    .testimonial { background:#fff; padding:24px; border-radius:12px; border:1px solid #e5e7eb; font-size:0.95rem; color:#333; }
+    footer { background:#1E3A8A; color:#fff; text-align:center; padding:30px 20px; }
+    footer a { color:#fff; margin:0 10px; text-decoration:none; }
+    @media (max-width:768px){
+      .hero h1 { font-size:2rem; }
+      .section { padding:60px 15px; }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- ===== HEADER ===== -->
   <header>
-    <div class="logo">
-      <img src="Logo SVG.svg" alt="Safe Mindset Logo" />
-      Safe Mindset
-    </div>
+    <img src="logo.png" alt="Safe Mindset Logo" />
     <nav>
-      <a href="#home">Home</a>
-      <a href="#mission">Mission</a>
       <a href="#services">Services</a>
-      <a href="#testimonials">Stories</a>
-      <a href="#faq">FAQ</a>
+      <a href="#about">About</a>
+      <a href="#mission">Mission</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section id="home" class="hero">
-    <h1>Break Free in 90 Days</h1>
-    <p>Qur’an-powered system to quit porn addiction, rebuild confidence, and rise stronger.</p>
-    <a href="https://wa.link/mc4wq4" target="_blank">
-      <button class="cta-btn">🔥 Start Your Recovery Today</button>
-    </a>
+  <section class="hero">
+    <h1>Guard Your Mind, Guide Your Life</h1>
+    <p>A 90-Day Qur’an-Powered Recovery Program to help you break free from addiction, rebuild confidence, and rise stronger.</p>
+    <a href="#contact" class="btn btn-primary">Start Recovery</a>
+    <a href="#services" class="btn btn-secondary">Explore Services</a>
+    <div class="trust-badges">
+      <div>✔ 100% Private</div>
+      <div>✔ Qur’an-Based</div>
+      <div>✔ Proven Roadmap</div>
+    </div>
   </section>
 
-  <!-- ===== OUR MISSION ===== -->
-  <section id="mission" class="section">
-    <h2>Our Mission</h2>
-    <p>
-      At <strong>Safe Mindset</strong>, our mission is to empower struggling Muslims trapped in addiction 
-      to break free and reclaim their true identity. Through our 90-day Qur’an-based system, 
-      we rebuild courage, strength, and self-control — helping every believer rise with dignity.
-    </p>
-  </section>
-
-  <!-- ===== SERVICES ===== -->
   <section id="services" class="section">
     <h2>Our Services</h2>
-    <div class="services-grid">
-
-      <div class="service-card">
-        <div class="icon">📅</div>
-        <h3>90-Day Recovery Program</h3>
-        <p>Structured step-by-step system to quit porn addiction in 90 days.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">🕌</div>
-        <h3>Qur’an & Salah Integration</h3>
-        <p>Daily spiritual strength through Qur’an and Salah practices.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">✅</div>
-        <h3>Daily Accountability</h3>
-        <p>Personalized reminders and monitoring to keep you consistent.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">💡</div>
-        <h3>Weekly Mindset Sessions</h3>
-        <p>Rebuild discipline, willpower, and clarity with guided sessions.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">💪</div>
-        <h3>Confidence & Identity Coaching</h3>
-        <p>Rediscover your self-worth and build a strong new identity.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">🔒</div>
-        <h3>Relapse Prevention</h3>
-        <p>Practical methods to avoid slips and stay clean long-term.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">🧠</div>
-        <h3>Scientific Insights</h3>
-        <p>Learn how your brain works and how to rewire it for success.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">🤝</div>
-        <h3>Community Support</h3>
-        <p>Safe space to connect with others without revealing your identity.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">🎯</div>
-        <h3>Productivity Training</h3>
-        <p>Replace harmful habits with study, work, and goal-oriented routines.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">❤️</div>
-        <h3>Relationship Coaching</h3>
-        <p>Build deeper intimacy, stronger communication, and trust with your spouse.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">⏱️</div>
-        <h3>Timing & Energy Reset</h3>
-        <p>Fix premature issues and regain full stamina naturally.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">🧩</div>
-        <h3>Mental Health Support</h3>
-        <p>Guidance for overcoming anxiety, depression, and stress linked to addiction.</p>
-      </div>
-
-      <div class="service-card">
-        <div class="icon">🚦</div>
-        <h3>Risky Behavior Control</h3>
-        <p>Stop engaging in destructive habits and set healthy boundaries.</p>
-      </div>
+    <div class="cards">
+      <div class="card"><h3>90-Day Recovery Plan</h3><p>Structured program combining Qur’an & Salah to quit addiction step-by-step.</p></div>
+      <div class="card"><h3>Daily Accountability</h3><p>Personalized reminders & check-ins to keep you consistent every day.</p></div>
+      <div class="card"><h3>Mindset Coaching</h3><p>Build confidence, self-control, and a strong new identity.</p></div>
+      <div class="card"><h3>Relapse Prevention</h3><p>Proven tools and methods to avoid slips and stay clean long-term.</p></div>
+      <div class="card"><h3>Spiritual Integration</h3><p>Strengthen your heart through Qur’an, Salah, and dua-based practices.</p></div>
+      <div class="card"><h3>Mental Wellness</h3><p>Guidance to overcome anxiety, depression, and stress caused by addiction.</p></div>
     </div>
   </section>
 
-  <!-- ===== TESTIMONIALS ===== -->
-  <section id="testimonials" class="section">
+  <section id="about" class="section about">
+    <h2>About Safe Mindset</h2>
+    <p>We studied the struggles of countless individuals trapped in addiction and designed a proven 90-day recovery system. Our plan is based on Qur’anic guidance, psychology, and behavioral science — tested and guaranteed to work if followed sincerely. Safe Mindset is where science and spirituality meet to give you a structured way out.</p>
+  </section>
+
+  <section id="mission" class="section mission">
+    <h2>Our Mission</h2>
+    <p>Our mission is to empower Muslims struggling with addiction to rise with strength, courage, and faith. We help you break free from fear and weakness, rebuild confidence, and reclaim your true identity. With Qur’an, Salah, and discipline, you will not only defeat addiction but also unlock your potential to live boldly and serve Allah’s cause with honor.</p>
+  </section>
+
+  <section class="section testimonials">
     <h2>Success Stories</h2>
-    <div class="testimonial">⭐ "I was trapped in addiction for years... Safe Mindset gave me my life back."</div>
-    <div class="testimonial">⭐ "I thought quitting was impossible... but this program made it real."</div>
-    <div class="testimonial">⭐ "Addiction had stolen my courage... today I stand fearless again."</div>
-  </section>
-
-  <!-- ===== FAQ ===== -->
-  <section id="faq" class="section">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <h4>Is my privacy guaranteed?</h4>
-      <p>Yes, 100%. Your journey stays fully confidential.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Does the program really work?</h4>
-      <p>Yes, backed by Qur’an, Salah, and proven psychology.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Do I need to show my identity?</h4>
-      <p>No, everything can be done anonymously.</p>
+    <div class="cards">
+      <div class="testimonial">“I was stuck for years. Safe Mindset gave me structure, Qur’an, and hope. Today I’m free and confident again.”</div>
+      <div class="testimonial">“The guilt was crushing me. This 90-day plan rebuilt my energy and identity. It truly works.”</div>
+      <div class="testimonial">“I thought I was weak. Safe Mindset showed me I was created strong. Addiction doesn’t define me anymore.”</div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <section class="section" style="text-align:center;">
+    <h2>In just 90 days, you can reclaim your mind, rebuild confidence, and rise stronger.</h2>
+    <p>🔒 100% Private • ✨ Guaranteed Transformation • 📖 Qur’an-Powered</p>
+    <a href="#contact" class="btn btn-primary">🔥 Start Your Journey Today</a>
+  </section>
+
   <footer id="contact">
-    <h3>Contact Us</h3>
-    <p>Start your recovery journey today:</p>
-    <a href="https://wa.link/mc4wq4" target="_blank">
-      <button class="cta-btn">📲 Chat on WhatsApp</button>
-    </a>
-
-    <div class="social-icons">
-      <a href="https://www.instagram.com/safemindset1" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/share/1CEfzPEuuR/" target="_blank"><i class="fab fa-facebook"></i></a>
-    </div>
-    <p style="margin-top:15px;">&copy; 2025 Safe Mindset. All Rights Reserved.</p>
+    <p>📞 +92 348 6960008 | 📧 safemindset@gmail.com</p>
+    <p>
+      <a href="https://wa.link/mc4wq4">WhatsApp</a> |
+      <a href="https://www.instagram.com/safemindset1">Instagram</a> |
+      <a href="https://www.facebook.com/share/1CEfzPEuuR/">Facebook</a>
+    </p>
   </footer>
-
 </body>
 </html>
