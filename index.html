@@ -7,7 +7,7 @@
   <style>
     body { margin:0; font-family: 'Poppins', Arial, sans-serif; line-height:1.6; color:#111; background:#f9fafb; }
     header { display:flex; justify-content:space-between; align-items:center; padding:20px; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.05); position:sticky; top:0; z-index:1000; }
-    header img { height:80px; }
+    header img { height:48px; }
     nav a { margin-left:20px; text-decoration:none; color:#1E3A8A; font-weight:500; }
     .hero { text-align:center; padding:80px 20px; background:#fff; }
     .hero h1 { font-size:2.5rem; color:#1E3A8A; margin-bottom:10px; font-weight:600; }
@@ -36,10 +36,13 @@
       .hero h1 { font-size:2rem; }
       .section { padding:60px 15px; }
     }
-  </style>
-</head>
-<body>
- <header>
+  <style>
+  header img {
+    height: 80px; /* Logo ko bara kar diya */
+  }
+</style>
+
+<header>
   <img src="Logo SVG.svg" alt="Safe Mindset Logo" />
   <nav>
     <a href="#services">Services</a>
@@ -48,7 +51,6 @@
     <a href="#contact">Contact</a>
   </nav>
 </header>
-  </header>
 
   <section class="hero">
     <h1>Guard Your Mind, Guide Your Life</h1>
