@@ -2,9 +2,20 @@
    1. LOGO & ICON SIZE SETTINGS
    ================================ */
 
-/* Website top left logo */
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;   /* Yeh header ka height control karega */
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  height: 100px;        /* Fix header height set kar di */
+}
+
+/* Logo image size */
 header img {
-  width: 80px;   /* yahan se logo ka size control hota hai */
+  width: 80px;   /* Sirf logo ka size control hoga */
   height: auto;
 }
 
