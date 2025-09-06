@@ -4,13 +4,13 @@
 
 /* Website top left logo */
 header img {
-  width: 100px;   /* yahan se logo ka size control hota hai */
+  width: 180px;   /* yahan se logo ka size control hota hai */
   height: auto;
 }
 
 /* Service section ke icons */
 .icon {
-  width: 10px;    /* yahan se icons ka size control hota hai */
+  width: 80px;    /* yahan se icons ka size control hota hai */
   height: auto;
   margin-bottom: 10px;
 }
